@@ -19,7 +19,9 @@ public class TessellationFrame extends JFrame {
 class TesPane extends JPanel { // this is the code for rendering the tessellation
   //the array of points in each puzzle piece
   //takes format x1,y1,x2,,y2,x3,y3....
-  static public final int[] p={21,60,47,60,48,69,39,68,40,80,63,80,73,78,62,70,61,60,81,60,82,37,74,37,68,45,60,37,63,23,73,30,81,29,81,0,61,0,62,10,73,18,63,20,40,20,39,8,48,9,47,0,21,0,21,29,13,30,10,23,3,23,0,37,8,45,14,37,22,37};
+  static public final int[] p={21,60,47,60,48,69,39,68,40,80,63,80,73,78,62,70,61,60,81,60,82,37,74,37,68,45,
+  60,37,63,23,73,30,81,29,81,0,61,0,62,10,73,18,63,20,40,20,39,8,48,9,47,0,21,0,21,29,13,30,10,23,3,23,0,37,
+  8,45,14,37,22,37};
   public void paintComponent(Graphics graf) { // this is called whenever that component needs to be redisplayed
   //Examples: window resize, first time displayed, overlap with other window
     Graphics2D g=(Graphics2D) graf;
