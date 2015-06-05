@@ -1,8 +1,8 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.geom.GeneralPath;
-// imports let meuse shortened names for stuff
-public class TessellationFrame extends JFrame {
+// imports let me use shortened names for stuff
+public class TessellationFrame extends JFrame { 
   TesPane pan=new TesPane(); // the panel which shows the tessellation
   TessellationFrame() {
     //setting up the window
@@ -26,8 +26,8 @@ class TesPane extends JPanel { // this is the code for rendering the tessellatio
     //these find the dimensions of the panel
     int width=this.size().width;
     int height=this.size().height;
-    for (int x=-60; x<width; x=x+60) { //loops through the panel horizontally to fill in with pieces
-      for (int y=-60; y<height; y+=60) {// loops through vertically to fill in with pieces
+    for (int x=-60; x<width+60; x=x+60) { //loops through the panel horizontally to fill in with pieces
+      for (int y=-60; y<height+60; y+=60) {// loops through vertically to fill in with pieces
         GeneralPath gen=new GeneralPath();
         if ((((x+120)/60)%2 + ((y+120)/60)%2)==1) { // decides if piece will be red or blue
           g.setColor(Color.RED);
